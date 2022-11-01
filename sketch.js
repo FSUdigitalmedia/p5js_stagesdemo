@@ -1,7 +1,12 @@
+let mgr;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400,400);
+  mgr = new SceneManager();
+  mgr.wire();
+  mgr.showScene(spring);
 }
 
 function draw() {
-  background(125);
+  mgr.draw();
 }
